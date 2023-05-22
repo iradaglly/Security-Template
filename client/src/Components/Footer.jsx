@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { Container } from "@mui/system";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import Input from "@mui/base/Input";
+// import Input from "@mui/base/Input";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import PublicIcon from '@mui/icons-material/Public';
@@ -41,7 +41,7 @@ const Footer = () => {
               <h3 style={{ color: "white" }}>NewsLetter</h3>
               <p style={{ color: "#716d6c" }}>Stay update with our latest</p>
               <br />
-              <Input style={{ width: "300px", height: "50px" }} />
+              {/* <Input /> */}
             </Grid>
             <Grid item xs={12} md={6} lg={4}>
               {" "}

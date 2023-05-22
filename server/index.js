@@ -16,6 +16,7 @@ mongoose
   .then(() => console.log("Mongo DB Connected!"));
 
 const SecuritySchema = new mongoose.Schema({
+  image:String,
   title: String,
   desc: String,
   likeCount: Number,
@@ -51,8 +52,9 @@ app.get("/security/:id", async (req, res) => {
 });
 //post
 app.post("/security", async (req, res) => {
-  const { title, desc, likeCount, commentCount } = req.body;
+  const { image,title, desc, likeCount, commentCount } = req.body;
   const newSec = new SecurityModel({
+    image:image,
     title: title,
     desc: desc,
     likeCount: likeCount,
@@ -65,8 +67,9 @@ app.post("/security", async (req, res) => {
 // put
 app.put("/security/:id", async (req, res) => {
   const id = req.params.id;
-  const { title, desc, likeCount, commentCount } = req.body;
+  const { image,title, desc, likeCount, commentCount } = req.body;
   const existedSec = await SecurityModel.findByIdAndUpdate(id, {
+    image:image,
     title: title,
     desc: desc,
     likeCount: likeCount,

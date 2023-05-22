@@ -5,15 +5,20 @@ import Features from "./Features";
 import Counts from "./Counts";
 import Cards from "./Cards";
 import Images from "./Images";
+import { Helmet } from "react-helmet";
+
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <title>Home Page</title>
+      </Helmet>
       <HomePage />
       <Services />
       <Features />
       <Counts />
-      <Images/>
-      <Cards/>
+      <Images />
+      <Cards />
     </>
   );
 };
