@@ -4,6 +4,7 @@ import Services from "./Services";
 import Features from "./Features";
 import Counts from "./Counts";
 import Cards from "./Cards";
+import Images from "./Images";
 const Home = () => {
   return (
     <>
@@ -11,6 +12,7 @@ const Home = () => {
       <Services />
       <Features />
       <Counts />
+      <Images/>
       <Cards/>
     </>
   );
